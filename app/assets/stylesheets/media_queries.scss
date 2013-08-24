@@ -1,0 +1,40 @@
+/* PHONE */
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  header {
+    background-color: orange !important;
+  }
+
+  .nav-container {
+    width: 90% !important;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-color: yellow !important;
+  }
+
+  .nav-container {
+    width: 60% !important;
+  }
+}

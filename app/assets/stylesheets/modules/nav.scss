@@ -1,0 +1,38 @@
+.nav-container {
+  height: 30px;
+  width: 40%;
+
+  position: relative;
+  top: 70px;
+  float: right;
+
+  background-color: #ddd;
+}
+
+nav {
+  ul {
+    margin: 0px;
+    padding: 0px;
+
+    line-height: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li {
+    float: left;
+    list-style-type: none;
+
+    width: 20%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+}

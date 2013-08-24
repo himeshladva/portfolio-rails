@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PortfolioRails</title>
+
+  <% if content_for?(:stylesheets) %>
+    <%= yield :stylesheets %>
+  <% else %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <% end %>
+
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= csrf_meta_tags %>
+  <% if content_for?(:head) %>
+    <%= yield :head %>
+  <% end %>
+
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <header>
+      <%= render 'shared/header' %>
+    </header>
+
+    <div class="content-container">
+      <div class="content">
+        <%= yield %>
+      </div>
+      <aside class="sidebar">
+        <% if content_for?(:sidebar) %>
+          <%= yield :sidebar %>
+        <% end %>
+      </aside>
+    </div>
+  </div>
+
+  <footer>
+    <%= render 'shared/footer' %>
+  </footer>
+</body>
+</html>
