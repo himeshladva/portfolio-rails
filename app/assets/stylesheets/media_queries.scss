@@ -1,40 +1,40 @@
-/* PHONE */
+// PHONE
 @media screen and (max-width: 480px) {
   .sidebar {
-    display: none !important;
+    display: none;
   }
 
   .content {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  header {
-    background-color: orange !important;
-  }
+// @media screen and (min-width: 481px) and (max-width: 767px) {
+//   header {
+//     background-color: orange;
+//   }
 
-  .nav-container {
-    width: 90% !important;
-  }
+//   .nav-container {
+//     width: 90%;
+//   }
 
-  .sidebar {
-    display: none !important;
-  }
+//   .sidebar {
+//     display: none;
+//   }
 
-  .content {
-    width: 100% !important;
-  }
-}
+//   .content {
+//     width: 100%;
+//   }
+// }
 
-/* TABLET */
+// TABLET
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
-    background-color: yellow !important;
+    background-color: yellow;
   }
 
   .nav-container {
-    width: 60% !important;
+    width: 60%;
   }
 }
