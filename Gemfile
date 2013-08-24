@@ -42,4 +42,9 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
+
+# Precompile assets
+group :production do
+  gem 'rails_12factor'
+end
