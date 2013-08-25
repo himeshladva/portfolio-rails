@@ -1,6 +1,6 @@
 @mixin include-font-face($name, $url, $format) {
   font-family: $name;
-  src: url($url) format($format);
+  src: asset-url($name + '/' + $url) format($format);
 }
 
 @font-face {
@@ -12,19 +12,19 @@
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+  @include include-font-face("Century Gothic", "Gothic_bold.ttf", "truetype");
 
   font-weight: bold;
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+  @include include-font-face("Century Gothic", "Gothic_italic.ttf", "truetype");
 
   font-style: italic;
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+  @include include-font-face("Century Gothic", "Gothic_bold_italic.ttf", "truetype");
 
   font-weight: bold;
   font-style: italic;
