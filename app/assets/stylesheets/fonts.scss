@@ -2,7 +2,7 @@
   $path: $name + '/' + $weight + '_' + $style;
 
   font-family: $name;
-  src: font-url("#{$path}");
+  src: font-url("#{$path}.eot");
   src: font-url("#{$path}.eot?#iefix") format('embedded-opentype'),
     font-url("#{$path}.woff") format('woff'),
     font-url("#{$path}.ttf") format('truetype');
