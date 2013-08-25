@@ -1,28 +1,31 @@
-@font-face {
-  font-family: "Lobster";
-  src: url(Lobster.otf) format("opentype");
+@mixin include-font-face($name, $url, $format) {
+  font-family: $name;
+  src: url($url) format($format);
 }
 
 @font-face {
-  font-family: "Century Gothic";
-  src: url(Gothic.ttf) format("truetype");
+  @include include-font-face("Lobster", "Lobster.otf", "opentype");
 }
 
 @font-face {
-  font-family: "Century Gothic";
-  src: url(gothic.ttf) format("truetype");
+  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+}
+
+@font-face {
+  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Century Gothic";
-  src: url(gothic.ttf) format("truetype");
+  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Century Gothic";
-  src: url(gothic.ttf) format("truetype");
+  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+
   font-weight: bold;
   font-style: italic;
 }
