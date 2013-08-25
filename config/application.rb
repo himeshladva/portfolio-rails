@@ -21,7 +21,7 @@ module PortfolioRails
     # config.i18n.default_locale = :de
 
     # Enable below line to use 'font-url in scss files'
-    # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     # config.assets.precompile += %w(.svg .eot .woff .ttf)
   end
 end
