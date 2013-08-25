@@ -1,6 +1,6 @@
 @mixin include-font-face($name, $url, $format) {
   font-family: $name;
-  src: asset-url($name + '/' + $url) format($format);
+  src: url($name + '/' + $url) format($format);
 }
 
 @font-face {
