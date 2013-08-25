@@ -23,11 +23,9 @@ module PortfolioRails
     # Enable the asset pipeline
     config.assets.enabled = true
 
-    # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
-
     # Enable below line to use 'font-url in scss files'
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.precompile += %w(.svg .eot .woff .ttf)
 
     config.assets.initialize_on_precompile = false
   end
