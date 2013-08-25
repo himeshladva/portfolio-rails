@@ -1,40 +1,32 @@
-@mixin include-font-face($name, $url, $format) {
+@mixin include-font-face($name, $weight, $style) {
+  $path: $name + '/' + $weight + '_' + $style;
+
   font-family: $name;
-  src: local($name),
-    url($name + '/' + $url) format($format);
+  src: font-url("#{$path}.eot");
+  src: font-url("#{$path}.eot?#iefix") format('embedded-opentype'),
+    font-url("#{$path}.woff") format('woff'),
+    font-url("#{$path}.ttf") format('truetype');
+
+  font-weight: $weight;
+  font-style: $style;
 }
 
 @font-face {
-  // @include include-font-face("Lobster", "Lobster.otf", "opentype");
-  font-family: 'Lobster';
-  src: font-url('Lobster/Lobster.otf');
-  // src:url('icomoon.eot?#iefix') format('opentype');
-    // url('icomoon.svg#icomoon') format('svg'),
-    // url('icomoon.woff') format('woff'),
-    // url('icomoon.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  @include include-font-face("Lobster", "normal", "normal");
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic.ttf", "truetype");
+  @include include-font-face("Century Gothic", "normal", "normal");
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic_bold.ttf", "truetype");
-
-  font-weight: bold;
+  @include include-font-face("Century Gothic", "bold", "normal");
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic_italic.ttf", "truetype");
-
-  font-style: italic;
+  @include include-font-face("Century Gothic", "normal", "italic");
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "Gothic_bold_italic.ttf", "truetype");
-
-  font-weight: bold;
-  font-style: italic;
+  @include include-font-face("Century Gothic", "bold", "italic");
 }
