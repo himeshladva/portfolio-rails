@@ -23,21 +23,19 @@
 </head>
 
 <body>
-  <div class="body-wrapper">
-    <header>
-      <%= render 'shared/header' %>
-    </header>
+  <header>
+    <%= render 'shared/header' %>
+  </header>
 
-    <div class="content-container">
-      <div class="content">
-        <%= yield %>
-      </div>
-      <aside class="sidebar">
-        <% if content_for?(:sidebar) %>
-          <%= yield :sidebar %>
-        <% end %>
-      </aside>
+  <div class="content-container">
+    <div class="content">
+      <%= yield %>
     </div>
+    <aside class="sidebar">
+      <% if content_for?(:sidebar) %>
+        <%= yield :sidebar %>
+      <% end %>
+    </aside>
   </div>
 
   <footer>

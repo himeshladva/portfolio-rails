@@ -27,8 +27,8 @@ nav {
       /* Adding a 1px inset highlight for a more polished efect: */
 
       box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
-      -moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
-      -webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+        -moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+        -webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
 
       position:relative;
 
@@ -61,15 +61,15 @@ nav {
         /* Creating borders with box-shadow. Useful, as they don't affect the size of the element. */
 
         box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
-        -moz-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
-        -webkit-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+          -moz-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+          -webkit-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
 
         /* This will create a smooth transition for the opacity property */
 
-        -moz-transition: 0.25s all;
-        -webkit-transition: 0.25s all;
-        -o-transition: 0.25s all;
         transition: 0.25s all;
+          -moz-transition: 0.25s all;
+          -webkit-transition: 0.25s all;
+          -o-transition: 0.25s all;
       }
 
       /* Treating the first LI and li:after elements separately */
@@ -81,8 +81,8 @@ nav {
       &:first-child:after,
       &.selected:first-child:after {
         box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
-        -moz-box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
-        -webkit-box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
+          -moz-box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
+          -webkit-box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
 
         border-radius: 4px 0 0 4px;
       }
@@ -96,8 +96,8 @@ nav {
       &:last-child:after,
       &.selected:last-child:after {
         box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
-        -moz-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
-        -webkit-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
+          -moz-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
+          -webkit-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
 
         border-radius: 0 4px 4px 0;
       }

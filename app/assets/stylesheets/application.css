@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require base
+ *= require fonts
  *= require_tree ./modules
  *= require media_queries
  */

@@ -1,25 +1,16 @@
 html, body {
-  height: 100%;
-
   margin: 0;
   padding: 0;
 }
 
-.body-wrapper {
-  min-height: 100%;
-}
-
 .content-container {
-  height: 750px;
-
-  overflow: auto;
-  padding-bottom: 70px;
+  height: 500px;
 
   background-color: yellow;
 }
 
 .content {
-  height: 700px;
+  height: 500px;
   width: 80%;
 
   float: left;

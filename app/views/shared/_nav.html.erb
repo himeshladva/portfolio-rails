@@ -1,19 +1,19 @@
 <div class="nav-container">
   <nav>
     <ul class="nav">
-      <li class="">
+      <li class="<%= selected?(root_url) %>">
         <a href="<%= root_url %>" class="homeIcon">Home</a>
       </li>
 
-      <li class="">
+      <li class="<%= selected?(page_about_url) %>">
         <a href="<%= page_about_url %>">About Me</a>
       </li>
 
-      <li class="">
+      <li class="<%= selected?(page_portfolio_url) %>">
         <a href="<%= page_portfolio_url %>">Portfolio</a>
       </li>
 
-      <li class="">
+      <li class="<%= selected?(page_contact_url) %>">
         <a href="<%= page_contact_url %>">Contact Me</a>
       </li>
     </ul>
