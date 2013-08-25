@@ -5,7 +5,15 @@
 }
 
 @font-face {
-  @include include-font-face("Lobster", "Lobster.otf", "opentype");
+  // @include include-font-face("Lobster", "Lobster.otf", "opentype");
+  font-family: 'Lobster';
+  src: font-url('Lobster/Lobster.otf');
+  // src:url('icomoon.eot?#iefix') format('opentype');
+    // url('icomoon.svg#icomoon') format('svg'),
+    // url('icomoon.woff') format('woff'),
+    // url('icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
