@@ -2,7 +2,7 @@
   $path: $name + '/' + $weight + '_' + $style;
 
   font-family: $name;
-  src: font-url("#{$path}.eot");
+  src: font-url("#{$path}");
   src: font-url("#{$path}.eot?#iefix") format('embedded-opentype'),
     font-url("#{$path}.woff") format('woff'),
     font-url("#{$path}.ttf") format('truetype');
@@ -12,21 +12,21 @@
 }
 
 @font-face {
-  @include include-font-face("Lobster", "normal", "normal");
+  @include include-font-face('Lobster', 'normal', 'normal');
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "normal", "normal");
+  @include include-font-face('Century Gothic', 'normal', 'normal');
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "bold", "normal");
+  @include include-font-face('Century Gothic', 'bold', 'normal');
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "normal", "italic");
+  @include include-font-face('Century Gothic', 'normal', 'italic');
 }
 
 @font-face {
-  @include include-font-face("Century Gothic", "bold", "italic");
+  @include include-font-face('Century Gothic', 'bold', 'italic');
 }
