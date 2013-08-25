@@ -1,32 +1,35 @@
-@mixin include-font-face($name, $weight, $style) {
-  $path: $name + '/' + $weight + '_' + $style;
+@mixin font-face-asset($name, $directory, $weight, $style) {
+  $path-prefix: $directory + '/' + $weight + '_' + $style;
 
   font-family: $name;
-  src: font-url("#{$path}.eot");
-  src: font-url("#{$path}.eot?#iefix") format('embedded-opentype'),
-    font-url("#{$path}.woff") format('woff'),
-    font-url("#{$path}.ttf") format('truetype');
+
+  src: font-url("#{$path-prefix}.eot");
+  src: local($name),
+    font-url("#{$path-prefix}.eot?#iefix") format('embedded-opentype'),
+    font-url("#{$path-prefix}.woff") format('woff'),
+    font-url("#{$path-prefix}.ttf") format('truetype');
 
   font-weight: $weight;
   font-style: $style;
 }
 
+
 @font-face {
-  @include include-font-face('Lobster', 'normal', 'normal');
+  @include font-face-asset('Lobster', 'Lobster', 'normal', 'normal');
 }
 
 @font-face {
-  @include include-font-face('Century Gothic', 'normal', 'normal');
+  @include font-face-asset('Century Gothic', 'CenturyGothic', 'bold', 'normal');
 }
 
 @font-face {
-  @include include-font-face('Century Gothic', 'bold', 'normal');
+  @include font-face-asset('Century Gothic', 'CenturyGothic', 'bold', 'italic');
 }
 
 @font-face {
-  @include include-font-face('Century Gothic', 'normal', 'italic');
+  @include font-face-asset('Century Gothic', 'CenturyGothic', 'normal', 'italic');
 }
 
 @font-face {
-  @include include-font-face('Century Gothic', 'bold', 'italic');
+  @include font-face-asset('Century Gothic', 'CenturyGothic', 'normal', 'normal');
 }
