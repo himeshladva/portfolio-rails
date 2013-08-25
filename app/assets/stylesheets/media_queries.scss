@@ -1,5 +1,33 @@
 // PHONE
 @media screen and (max-width: 480px) {
+  header {
+    background: image-url('header/hl.png') no-repeat left center;
+    background-size: 83px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .nav-container {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  header {
+    background-color: orange;
+  }
+
+//   .nav-container {
+//     width: 90%;
+//   }
+
   .sidebar {
     display: none;
   }
@@ -8,25 +36,6 @@
     width: 100%;
   }
 }
-
-
-// @media screen and (min-width: 481px) and (max-width: 767px) {
-//   header {
-//     background-color: orange;
-//   }
-
-//   .nav-container {
-//     width: 90%;
-//   }
-
-//   .sidebar {
-//     display: none;
-//   }
-
-//   .content {
-//     width: 100%;
-//   }
-// }
 
 // TABLET
 @media screen and (min-width: 768px) and (max-width: 1024px) {
