@@ -1,5 +1,5 @@
 header {
-  height: 100px;
+  height: 85px;
   width: 100%;
 
   position: fixed;
@@ -21,11 +21,16 @@ header {
     padding-left: 20px;
 
     font-family: "Century Gothic";
-    font-size: 80px;
-    letter-spacing: -6px;
-    line-height: 100px;
+    font-size: 65px;
+    letter-spacing: -5px;
+    line-height: 85px;
 
-    .blue {
+    &:before {
+      content: 'himesh';
+    }
+
+    &:after {
+      content: 'Ladva';
       color: #1d8ef7;
     }
   }
