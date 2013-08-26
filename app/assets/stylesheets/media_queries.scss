@@ -1,8 +1,27 @@
 // PHONE
 @media screen and (max-width: 480px) {
   header {
-    background: image-url('header/hl.png') no-repeat left center;
-    background-size: 83px;
+    // background: image-url('header/hl.png') no-repeat left center;
+    // background-size: 83px;
+    height: 60px;
+
+    .logo {
+      font-size: 60px;
+      line-height: 60px;
+
+      &:before {
+        content: 'h';
+      }
+
+      &:after {
+        content: 'L';
+        color: #1d8ef7;
+      }
+    }
+  }
+
+  .content-container {
+    margin-top: 60px;
   }
 
   .sidebar {
