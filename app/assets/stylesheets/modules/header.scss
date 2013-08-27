@@ -13,23 +13,26 @@ header {
 
   margin-bottom: 10px;
 
-  .logo {
-    float: left;
+  a.logo-link {
+    .logo {
+      float: left;
 
-    padding-left: 20px;
+      padding-left: 20px;
 
-    font-family: "Century Gothic";
-    font-size: 65px;
-    letter-spacing: -5px;
-    line-height: 85px;
+      font-family: "Century Gothic";
+      font-size: 65px;
+      letter-spacing: -5px;
+      line-height: 85px;
 
-    &:before {
-      content: 'himesh';
-    }
+      &:before {
+        content: 'himesh';
+        color: black;
+      }
 
-    &:after {
-      content: 'Ladva';
-      color: #1d8ef7;
+      &:after {
+        content: 'Ladva';
+        color: #1d8ef7;
+      }
     }
   }
 }

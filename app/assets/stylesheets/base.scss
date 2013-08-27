@@ -11,22 +11,11 @@ html, body {
   margin-top: 85px;
 
   background-color: yellow;
-}
 
-.content {
-  height: 500px;
-  width: 80%;
+  .content {
+    height: 500px;
+    width: 80%;
 
-  float: left;
-
-  background-color: red;
-}
-
-.sidebar{
-  height: 250px;
-  width: 20%;
-
-  float: right;
-
-  background-color: blue;
+    float: left;
+  }
 }
