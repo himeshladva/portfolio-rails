@@ -8,15 +8,6 @@ module ApplicationHelper
   end
 
   def current_page
-    case request.path
-      when '/'
-        return 'home'
-      when '/about'
-        return 'about'
-      when '/portfolio'
-        return 'portfolio'
-      when '/contact'
-        return 'contact'
-    end
+    params[:action] == 'index' ? 'home' : params[:action]
   end
 end

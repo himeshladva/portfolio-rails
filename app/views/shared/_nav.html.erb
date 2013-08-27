@@ -2,19 +2,19 @@
   <nav>
     <ul class="nav">
       <li class="<%= selected?(root_url) %>">
-        <a href="<%= root_url %>" class="homeIcon">Home</a>
+        <%= link_to 'Home', root_url, class: 'homeIcon' %>
       </li>
 
       <li class="<%= selected?(page_about_url) %>">
-        <a href="<%= page_about_url %>">About Me</a>
+        <%= link_to 'About Me', page_about_url %>
       </li>
 
       <li class="<%= selected?(page_portfolio_url) %>">
-        <a href="<%= page_portfolio_url %>">Portfolio</a>
+        <%= link_to 'Portfolio', page_portfolio_url %>
       </li>
 
       <li class="<%= selected?(page_contact_url) %>">
-        <a href="<%= page_contact_url %>">Contact Me</a>
+        <%= link_to 'Contact Me', page_contact_url %>
       </li>
     </ul>
   </nav>
