@@ -1,9 +1,68 @@
 footer {
-  height: 70px;
+  height: 30px;
   width: 100%;
 
   position: fixed;
   bottom: 0;
+  z-index: 999;
 
-  background-color: green;
+  border-top: 1px solid #c4c4c4;
+
+  background-color: #fff;
+
+  line-height: 30px;
+  text-align: center;
+
+  .copyright {
+    display: inline-block;
+
+    font-size: 13px;
+    text-align: center;
+
+    padding-right: 15px;
+  }
+
+  .social-links {
+    display: inline-block;
+
+    a {
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+
+      height: 21px;
+    }
+
+    .facebook {
+      content: image-url('social/facebook.png');
+
+      &:hover {
+        content: image-url('social/facebook_colour.png');
+      }
+    }
+
+    .twitter {
+      content: image-url('social/twitter.png');
+
+      &:hover {
+        content: image-url('social/twitter_colour.png');
+      }
+    }
+
+    .linkedin {
+      content: image-url('social/linkedin.png');
+
+      &:hover {
+        content: image-url('social/linkedin_colour.png');
+      }
+    }
+
+    .instagram {
+      content: image-url('social/instagram.png');
+
+      &:hover {
+        content: image-url('social/instagram_colour.png');
+      }
+    }
+  }
 }

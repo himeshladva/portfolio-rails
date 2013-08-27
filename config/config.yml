@@ -1,0 +1,5 @@
+default: &default
+  facebook_link: 'http://www.facebook.com/himeshladva'
+  twitter_link: 'http://www.twitter.com/HimeshLadva'
+  linkedin_link: 'http://uk.linkedin.com/in/himeshladva'
+  instagram_link: 'http://www.instagram.com/himeshladva'
