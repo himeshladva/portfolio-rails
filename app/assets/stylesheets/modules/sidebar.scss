@@ -1,6 +1,8 @@
 .sidebar-container {
   width: 20%;
 
+  overflow-y: scroll;
+
   float: right;
 
   .sidebar{
