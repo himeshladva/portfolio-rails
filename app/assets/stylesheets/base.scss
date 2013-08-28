@@ -5,17 +5,12 @@ html, body {
   font-family: "Century Gothic";
 }
 
-.content-container {
-  height: 500px;
+h1, h2 {
+  color: #404040;
+}
 
-  margin-top: 85px;
-
-  .content {
-    height: 500px;
-    width: 80%;
-
-    float: left;
-  }
+h1 {
+  font-size: 30px;
 }
 
 .preload-assets {

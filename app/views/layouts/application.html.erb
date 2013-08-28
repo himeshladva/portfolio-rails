@@ -22,23 +22,25 @@
   <% if content_for?(:head) %>
     <%= yield :head %>
   <% end %>
-
 </head>
 
 <body>
   <%= render 'shared/header' %>
-
-  <div class="content-container">
-    <div class="content <%= current_page %>-content">
-      <%= yield %>
+  <div class="content-wrapper">
+    <div class="content-container">
+      <div class="content <%= current_page %>-content">
+        <%= yield %>
+      </div>
     </div>
-    <aside class="sidebar">
-      <% if content_for?(:sidebar) %>
-        <%= yield :sidebar %>
-      <% end %>
-    </aside>
-  </div>
 
+    <div class="sidebar-container">
+      <aside class="sidebar">
+        <% if content_for?(:sidebar) %>
+          <%= yield :sidebar %>
+        <% end %>
+      </aside>
+    </div>
+  </div>
   <%= render 'shared/footer' %>
 </body>
 </html>

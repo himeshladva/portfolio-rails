@@ -1,0 +1,23 @@
+.content-wrapper {
+  margin-top: 95px;
+
+  .content-container {
+    width: 80%;
+
+    float: left;
+
+    .content {
+      border: 1px dashed green;
+
+      margin: 0 10px 0 20px;
+
+      box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-boz-sizing: border-box;
+    }
+
+    .page-title {
+      text-align: center;
+    }
+  }
+}

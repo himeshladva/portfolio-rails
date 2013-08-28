@@ -1,6 +1,19 @@
-.sidebar{
-  height: 250px;
+.sidebar-container {
   width: 20%;
 
   float: right;
+
+  .sidebar{
+    border: 1px dashed red;
+
+    margin: 0 20px 0 10px;
+    box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-boz-sizing: border-box;
+
+
+    .sidebar-title {
+      text-align: center;
+    }
+  }
 }
