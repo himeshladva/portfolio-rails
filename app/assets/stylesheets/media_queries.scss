@@ -18,16 +18,16 @@
     }
   }
 
-  .content-container {
+  .content-wrapper {
     margin-top: 60px;
   }
 
-  .sidebar {
+  .sidebar-container {
     display: none;
   }
 
-  .content {
-    width: 100%;
+  .content-container {
+    width: 100% !important;
   }
 
   .nav-container {
@@ -41,12 +41,16 @@
     background-color: orange;
   }
 
-  .sidebar {
+  .sidebar-container {
     display: none;
   }
 
-  .content {
-    width: 100%;
+  .content-container {
+    width: 100% !important;
+  }
+
+  .nav-container {
+    display: none;
   }
 }
 
@@ -54,5 +58,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     background-color: yellow;
+  }
+
+  nav li a {
+    padding: 12px 9px 14px !important;
   }
 }
