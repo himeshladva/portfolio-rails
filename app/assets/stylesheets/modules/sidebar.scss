@@ -8,20 +8,23 @@
   float: right;
 
   .sidebar-close {
+    cursor: pointer;
+
     background-image: image-url('right.png');
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 22px auto;
 
     margin: auto;
     position: absolute;
     top: 0;
-    left: 5px;
+    left: 10px;
     bottom: 0;
 
     float: left;
 
-    height: 32px;
-    width: 17px;
+    height: 60px;
+    width: 22px;
   }
 
   .sidebar{

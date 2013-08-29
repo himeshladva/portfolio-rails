@@ -12,22 +12,25 @@
     float: left;
 
     .sidebar-open {
+      cursor: pointer;
+
       background-image: image-url('left.png');
       background-repeat: no-repeat;
       background-position: left center;
+      background-size: 22px auto;
 
       display: none;
 
       margin: auto;
       position: absolute;
       top: 0;
-      right: 5px;
+      right: 21px;
       bottom: 0;
 
       float: left;
 
-      height: 32px;
-      width: 17px;
+      height: 60px;
+      width: 22px;
     }
 
     .content {

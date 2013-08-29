@@ -63,6 +63,7 @@ $(document).ready(function () {
       $('.content-container').stop().animate({'width': '100%'}, 500);
       $('.content').stop().animate({'margin': '0 20px'}, 500);
       $('.sidebar-open').stop().fadeIn(500);
+      $('.sidebar-close').stop().fadeOut(500);
     },
 
     showSidebar: function () {
@@ -70,6 +71,7 @@ $(document).ready(function () {
       $('.content-container').stop().animate({'width': '80%'}, 500);
       $('.content').stop().animate({'margin': '0 10px 0 20px'}, 500);
       $('.sidebar-open').stop().fadeOut(500);
+      $('.sidebar-close').stop().fadeIn(500);
     }
   };
 
