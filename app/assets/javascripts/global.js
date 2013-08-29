@@ -32,7 +32,14 @@ $(document).ready(function () {
     },
 
     resize: function () {
-      var height = $(window).height() - 130;
+      var subtract;
+      if ($(window).width() < 481) {
+        subtract = 105;
+      } else {
+        subtract = 130;
+      }
+
+      var height = $(window).height() - subtract;
       $('.content').height(height);
       $('.sidebar').height(height);
     }
@@ -42,25 +49,27 @@ $(document).ready(function () {
     init: function () {
       var self = this;
 
-      $('.sidebar:visible').click(function () {
+      $('.sidebar-close').click(function () {
         self.hideSidebar();
       });
 
-      $('.content').click(function () {
+      $('.sidebar-open').click(function () {
         self.showSidebar();
       });
     },
 
     hideSidebar: function () {
-      $('.sidebar-container').animate({'margin-right': '-500px'}, 500);
-      $('.content-container').animate({'width': '100%'}, 500);
-      $('.content').animate({'margin': '0 20px'}, 500);
+      $('.sidebar-container').stop().animate({'margin-right': '-500px'}, 500);
+      $('.content-container').stop().animate({'width': '100%'}, 500);
+      $('.content').stop().animate({'margin': '0 20px'}, 500);
+      $('.sidebar-open').stop().fadeIn(500);
     },
 
     showSidebar: function () {
-      $('.sidebar-container').animate({'margin-right': '0px'}, 500);
-      $('.content-container').animate({'width': '80%'}, 500);
-      $('.content').animate({'margin': '0 10px 0 20px'}, 500);
+      $('.sidebar-container').stop().animate({'margin-right': '0px'}, 500);
+      $('.content-container').stop().animate({'width': '80%'}, 500);
+      $('.content').stop().animate({'margin': '0 10px 0 20px'}, 500);
+      $('.sidebar-open').stop().fadeOut(500);
     }
   };
 

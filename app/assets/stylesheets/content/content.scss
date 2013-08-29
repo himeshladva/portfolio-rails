@@ -5,15 +5,36 @@
   .content-container {
     width: 80%;
 
+    position: relative;
+
     overflow-y: scroll;
 
     float: left;
 
+    .sidebar-open {
+      background-image: image-url('left.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+
+      display: none;
+
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 5px;
+      bottom: 0;
+
+      float: left;
+
+      height: 32px;
+      width: 17px;
+    }
+
     .content {
-      border: 1px dashed green;
+      box-shadow: 1px 3px 5px 0 #e9e9e9;
+      border: 1px solid #e9e9e9;
 
       margin: 0 10px 0 20px;
-
       box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-boz-sizing: border-box;

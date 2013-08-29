@@ -1,18 +1,37 @@
 .sidebar-container {
   width: 20%;
 
+  position: relative;
+
   overflow-y: scroll;
 
   float: right;
 
+  .sidebar-close {
+    background-image: image-url('right.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+
+    float: left;
+
+    height: 32px;
+    width: 17px;
+  }
+
   .sidebar{
-    border: 1px dashed red;
+    box-shadow: 1px 3px 5px 0 #e9e9e9;
+    border: 1px solid #e9e9e9;
 
     margin: 0 20px 0 10px;
     box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-boz-sizing: border-box;
-
 
     .sidebar-title {
       text-align: center;
