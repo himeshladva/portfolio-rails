@@ -1,20 +1,9 @@
 .sidebar {
   .instagram {
-    position: relative;
-
-    .carousel-container {
-      div {
-        display: inline-block;
-      }
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-
     .carousel {
       width: 80%;
+
+      display: inline-block;
 
       .spinner {
         display: block;
@@ -30,12 +19,14 @@
       }
 
       .caption {
-        width: 180px;
+        width: 100%;
         font-size: 13px;
       }
     }
 
     .prev, .next {
+      display: inline-block;
+
       cursor: pointer;
 
       width: 20px;
