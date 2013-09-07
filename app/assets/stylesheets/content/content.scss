@@ -3,7 +3,11 @@
   overflow: hidden;
 
   .content-container {
-    width: 80%;
+    width: 100%;
+    padding-right: 275px;
+    box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-boz-sizing: border-box;
 
     position: relative;
 
@@ -24,10 +28,8 @@
       margin: auto;
       position: absolute;
       top: 0;
-      right: 21px;
+      right: 0;
       bottom: 0;
-
-      float: left;
 
       height: 60px;
       width: 22px;

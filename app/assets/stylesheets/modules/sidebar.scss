@@ -1,13 +1,15 @@
 .sidebar-container {
-  width: 20%;
+  width: 275px;
 
-  position: relative;
+  position: absolute;
+  right: 0;
 
   overflow-y: scroll;
 
   float: right;
 
   .sidebar-close {
+    z-index: 100;
     cursor: pointer;
 
     background-image: image-url('right.png');
