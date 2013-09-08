@@ -2,6 +2,7 @@ $(document).ready(function () {
   var Initialize = {
     init: function () {
       // PageFade.init();
+      ToggleMenuClass.init();
       SetHeight.init();
       ToggleSidebar.init();
       Instagram.init();
@@ -20,6 +21,30 @@ $(document).ready(function () {
           document.location.href = redirect;
         });
       });
+    }
+  };
+
+  var ToggleMenuClass = {
+    init: function () {
+      this.addClass();
+      var self = this;
+      $(window).resize(function() {
+        self.removeClass();
+        self.addClass();
+      });
+    },
+
+    addClass: function () {
+      if ($(window).width() > 768) {
+        $('nav.size').addClass('main');
+      } else {
+        $('nav.size').addClass('small');
+      }
+    },
+
+    removeClass: function () {
+      $('nav.size').removeClass('main');
+      $('nav.size').removeClass('small');
     }
   };
 

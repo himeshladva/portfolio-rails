@@ -2,7 +2,7 @@
   float: right;
 }
 
-nav {
+nav.main {
   padding: 5px 0 0 0;
 
   .nav {
@@ -30,7 +30,7 @@ nav {
         -moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
         -webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
 
-      position:relative;
+      position: relative;
 
       float: left;
       list-style: none;

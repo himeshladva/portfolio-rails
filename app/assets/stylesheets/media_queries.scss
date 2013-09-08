@@ -52,7 +52,9 @@
   }
 
   .nav-container {
-    display: none;
+    nav.main {
+      display: none;
+    }
   }
 }
 
@@ -62,7 +64,31 @@
     background-color: yellow;
   }
 
-  nav li a {
-    padding: 12px 9px 14px !important;
+  .nav-container {
+    button.menu {
+      display: none;
+    }
+
+    nav.main li a {
+      padding: 12px 9px 14px !important;
+    }
+
+    nav.small {
+      display: none;
+    }
+  }
+
+}
+
+// DESKTOP
+@media screen and (min-width: 1025px) {
+  .nav-container {
+    button.menu {
+      display: none;
+    }
+
+    nav.small {
+      display: none;
+    }
   }
 }
