@@ -1,11 +1,19 @@
 <div class="sidebar-close"></div>
 <aside class="sidebar">
   <div class="twitter">
-    <h2>My Tweets</h2>
+    <h2><a href="<%= CONFIG['twitter_link'] %>" target="_blank">My Tweets</a></h2>
+    <a class="twitter-timeline" href="https://twitter.com/HimeshLadva" data-widget-id="381512433140895744" data-chrome="noheader nofooter transparent" height="220px">
+      Tweets by @HimeshLadva
+    </a>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
   </div>
 
   <div class="instagram">
-    <h2>My Instagram</h2>
+    <h2><a href="<%= CONFIG['instagram_link'] %>" target="_blank">My Instagram</a></h2>
 
     <div class="carousel-container">
       <div class="prev"></div>
