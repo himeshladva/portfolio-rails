@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require instafeed.min.js
-//= require_tree .
+//= require global
+//= require pageFade
+//= require menuClass
+//= require setPageHeight
+//= require sidebar
+//= require instagram
