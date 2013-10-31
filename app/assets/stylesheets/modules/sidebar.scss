@@ -1,3 +1,5 @@
+@import 'mixins/background-image';
+
 .sidebar-container {
   width: 275px;
 
@@ -12,10 +14,7 @@
     z-index: 100;
     cursor: pointer;
 
-    background-image: image-url('right.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 22px auto;
+    @include backgroundImage(image-url('right.png'), no-repeat, right center, 22px auto);
 
     margin: auto;
     position: absolute;

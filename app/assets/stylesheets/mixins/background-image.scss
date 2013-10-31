@@ -1,0 +1,6 @@
+@mixin backgroundImage($url, $repeat, $pos, $size) {
+  background: $url;
+  background-repeat: $repeat;
+  background-position: $pos;
+  background-size: $size;
+}

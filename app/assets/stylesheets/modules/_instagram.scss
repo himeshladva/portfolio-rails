@@ -1,5 +1,16 @@
+@import 'mixins/background-image';
+
 .sidebar {
   .instagram {
+    h2 {
+      @include backgroundImage(image-url('social/instagram_colour.png'), no-repeat, 30px, 20px);
+
+      a {
+        text-decoration: none;
+        color: #404040;
+      }
+    }
+
     .carousel {
       width: 80%;
 
@@ -31,18 +42,15 @@
 
       width: 20px;
       height: 30px;
-
-      background-repeat: no-repeat;
-      background-size: 15px auto;
-      background-position: center center;
     }
 
     .prev {
-      background-image: image-url('left.png');
+      @include backgroundImage(image-url('left.png'), no-repeat, center center, 15px auto);
+
     }
 
     .next {
-      background-image: image-url('right.png');
+      @include backgroundImage(image-url('right.png'), no-repeat, center center, 15px auto);
     }
   }
 }
