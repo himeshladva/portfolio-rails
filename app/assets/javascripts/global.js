@@ -3,9 +3,8 @@ $(document).ready(function () {
     init: function () {
       pageFade.init();
       toggleMenuClass.init();
-      setPageHeight.init();
-      toggleSidebar.init();
-      instagram.init();
+      // setPageHeight.init();
+      // instagram.init();
     }
   }
 

@@ -1,51 +1,13 @@
-@import 'mixins/background-image';
-
-.content-wrapper {
+.content-container {
   margin-top: 95px;
-  overflow: hidden;
 
-  .content-container {
-    width: 100%;
-    padding-right: 275px;
-    box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-boz-sizing: border-box;
+  position: relative;
 
-    position: relative;
+  .content {
+    height: 1200px;
+  }
 
-    overflow-y: scroll;
-
-    float: left;
-
-    .sidebar-open {
-      cursor: pointer;
-
-      @include backgroundImage(image-url('left.png'), no-repeat, left center, 22px auto);
-
-      display: none;
-
-      margin: auto;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-
-      height: 60px;
-      width: 22px;
-    }
-
-    .content {
-      box-shadow: 1px 3px 5px 0 #e9e9e9;
-      border: 1px solid #e9e9e9;
-
-      margin: 0 10px 0 20px;
-      box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-boz-sizing: border-box;
-    }
-
-    .page-title {
-      text-align: center;
-    }
+  h1.section-title {
+    text-align: center;
   }
 }

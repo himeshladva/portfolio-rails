@@ -17,5 +17,4 @@
 //= require pageFade
 //= require menuClass
 //= require setPageHeight
-//= require sidebar
 //= require instagram

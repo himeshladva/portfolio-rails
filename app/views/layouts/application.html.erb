@@ -26,20 +26,13 @@
 
 <body>
   <%= render 'shared/header' %>
-  <div class="content-wrapper">
-    <div class="content-container">
-      <div class="sidebar-open"></div>
-      <div class="content <%= current_page %>-content">
-        <%= yield %>
-      </div>
-    </div>
 
-    <div class="sidebar-container">
-      <% if content_for?(:sidebar) %>
-        <%= yield :sidebar %>
-      <% end %>
+  <div class="content-container">
+    <div class="content <%= current_page %>-content">
+      <%= yield %>
     </div>
   </div>
+
   <%= render 'shared/footer' %>
 </body>
 </html>
