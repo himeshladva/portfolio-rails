@@ -5,6 +5,10 @@
 
   .content {
     height: 1200px;
+
+    .section-separator {
+      border-bottom: 2px solid red;
+    }
   }
 
   h1.section-title {

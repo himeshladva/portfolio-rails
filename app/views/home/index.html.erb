@@ -6,4 +6,20 @@
 <% content_for :head do %>
 <% end %>
 
-<h1 class="section-title">Section title!</h1>
+<div class="home-section">
+  <h1 class="section-title">Welcome to my portfolio</h1>
+</div>
+
+<%= render 'shared/separator' %>
+
+<div class="about-section">
+  <%= render 'about' %>
+</div>
+
+<div class="portfolio-section">
+  <%= render 'portfolio' %>
+</div>
+
+<div class="contact-section">
+  <%= render 'contact' %>
+</div>
