@@ -1,13 +1,31 @@
+@import 'mixins/background-image';
+
 .content-container {
   margin-top: 95px;
 
   position: relative;
 
   .content {
-    height: 1200px;
+    // height: 1200px;
+
+    // .section {
+    //   height: 300px;
+    // }
 
     .section-separator {
-      border-bottom: 2px solid red;
+      width: 950px;
+      height: 33px;
+
+      display: block;
+      margin: auto;
+
+      cursor: pointer;
+
+      @include backgroundImage(image-url('nav/separator_light.png'), no-repeat, center center, 950px 33px);
+
+      &:hover {
+        background-image: image-url('nav/separator_dark.png');
+      }
     }
   }
 
