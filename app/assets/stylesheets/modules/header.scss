@@ -9,7 +9,11 @@ header {
   background-color: #fff;
 
   border-top: 3px solid black;
-  box-shadow: 0px 0px 15px 0px #888888;
+  border-bottom: 1px solid #c4c4c4;
+
+  transition: box-shadow 0.3s;
+  transition: height 0.1s;
+
 
   .logo {
     float: left;
@@ -21,6 +25,8 @@ header {
     letter-spacing: -5px;
     line-height: 85px;
 
+    transition: all 0.1s;
+
     &:before {
       content: 'himesh';
       color: black;
@@ -30,5 +36,23 @@ header {
       content: 'Ladva';
       color: #1d8ef7;
     }
+  }
+
+  .logo.small {
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: -3px;
+
+    transition: all 0.3s;
+  }
+
+  &.shadow {
+    box-shadow: 0px 0px 15px 0px #888888;
+    transition: box-shadow 0.3s;
+  }
+
+  &.small {
+    height: 50px;
+    transition: height 0.3s;
   }
 }
