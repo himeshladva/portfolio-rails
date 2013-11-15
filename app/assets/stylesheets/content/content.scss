@@ -23,8 +23,11 @@
 
       @include backgroundImage(image-url('nav/separator_light.png'), no-repeat, center center, 950px 33px);
 
+      transition: background-image 0.2s;
+
       &:hover {
         background-image: image-url('nav/separator_dark.png');
+        transition: background-image 0.2s;
       }
     }
   }
