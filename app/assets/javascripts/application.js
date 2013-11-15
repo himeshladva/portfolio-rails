@@ -18,3 +18,4 @@
 //= require menuClass
 //= require setPageHeight
 //= require instagram
+//= require scrollPos
