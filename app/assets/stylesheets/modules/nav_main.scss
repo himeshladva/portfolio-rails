@@ -1,149 +1,79 @@
 .nav-container {
   float: right;
-}
 
-nav.main {
-  padding: 5px 0 0 0;
+  nav.main {
+    padding-right: 40px;
 
-  .nav {
-    overflow: hidden;
-    display: inline-block;
+    ul.nav {
+      overflow: hidden;
+      display: inline-block;
 
-    padding-right: 20px;
+      margin: 0;
 
-    li {
-      cursor: pointer;
-      /* Specifying a fallback color and we define CSS3 gradients for the major browsers: */
+      line-height: 85px;
 
-      background-color: #f0f0f0;
-      background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
-      background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
-      background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
-      background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
-      background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+      transition: line-height 0.3s;
 
-      border-right: 1px solid rgba(9, 9, 9, 0.125);
+      li {
+        float: left;
 
-      /* Adding a 1px inset highlight for a more polished efect: */
+        padding: 0 10px;
 
-      box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
-        -moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
-        -webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+        list-style: none;
+        text-align: center;
 
-      position: relative;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.3s linear;
 
-      float: left;
-      list-style: none;
+        &:hover {
+          &.home {
+            border-bottom: 1px solid red;
+          }
 
-      &:after {
+          &.about {
+            border-bottom: 1px solid blue;
+          }
 
-        /* This creates a pseudo element inslide each LI */
+          &.portfolio {
+            border-bottom: 1px solid yellow;
+          }
 
-        content: '.';
-        text-indent: -9999px;
-        overflow: hidden;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        opacity: 0;
-
-        /* Gradients! */
-
-        background-image: -webkit-gradient(linear, left top, right top, from(rgba(168,168,168,0.5)),color-stop(0.5,rgba(168,168,168,0)), to(rgba(168,168,168,0.5)));
-        background-image: -moz-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
-        background-image: -o-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
-        background-image: -ms-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
-        background-image: linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
-
-        /* Creating borders with box-shadow. Useful, as they don't affect the size of the element. */
-
-        box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
-          -moz-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
-          -webkit-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
-
-        /* This will create a smooth transition for the opacity property */
-
-        transition: 0.25s all;
-          -moz-transition: 0.25s all;
-          -webkit-transition: 0.25s all;
-          -o-transition: 0.25s all;
-      }
-
-      /* Treating the first LI and li:after elements separately */
-
-      &:first-child {
-        border-radius: 4px 0 0 4px;
-      }
-
-      &:first-child:after,
-      &.selected:first-child:after {
-        box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
-          -moz-box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
-          -webkit-box-shadow: 1px 0 0 #a3a3a3,2px 0 0 #fff;
-
-        border-radius: 4px 0 0 4px;
-      }
-
-      &:last-child {
-        border-radius: 0 4px 4px 0;
-      }
-
-      /* Treating the last LI and li:after elements separately */
-
-      &:last-child:after,
-      &.selected:last-child:after {
-        box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
-          -moz-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
-          -webkit-box-shadow: -1px 0 0 #a3a3a3,-2px 0 0 #fff;
-
-        border-radius: 0 4px 4px 0;
-      }
-
-      &:hover:after,
-      &.selected:after,
-      &:target:after {
-        /* This property triggers the CSS3 transition */
-        opacity: 1;
-      }
-    }
-
-    &:hover li.selected:after,
-    &:hover li:target:after {
-      /* Hides the targeted li when we are hovering on the UL */
-      opacity: 0;
-    }
-
-    li {
-      .selected:hover:after,
-      &:target:hover:after {
-        opacity: 1 !important;
-      }
-
-    /* Styling the anchor elements */
-
-      a {
-        color: #5d5d5d;
-        display: inline-block;
-        font: 20px/1 Lobster, Arial, sans-serif;
-        padding: 12px 35px 14px;
-        position: relative;
-        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
-        z-index: 2;
-        text-decoration: none !important;
-        white-space: nowrap;
-
-        &.homeIcon {
-          background: image-url('nav/home.png') no-repeat center center;
-          display: block;
-          overflow: hidden;
-          padding-left: 12px;
-          padding-right: 12px;
-          text-indent: -9999px;
-          width: 16px;
+          &.contact {
+            border-bottom: 1px solid green;
+          }
         }
+
+        a {
+          position: relative;
+          top: 5px;
+          transition: top 0.2s;
+
+          width: 95px;
+
+          display: block;
+
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            position: relative;
+            top: 20px;
+            transition: top 0.2s;
+          }
+        }
+      }
+    }
+  }
+
+  &.small {
+    nav.main ul.nav {
+      line-height: 50px;
+      transition: line-height 0.3s;
+
+      li a {
+        position: relative;
+        top: 2px;
+        transition: top 0.3s;
       }
     }
   }

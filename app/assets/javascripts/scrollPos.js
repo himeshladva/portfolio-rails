@@ -6,7 +6,7 @@ var scrollPos = {
       self.resize([$('header.masthead')], 'shadow', 10);
 
       // SMALL HEADER
-      self.resize([$('header.masthead'), $('header .logo')], 'small', 300);
+      self.resize([$('header.masthead'), $('header .logo'), $('div.nav-container')], 'small', 300);
     });
   },
 
