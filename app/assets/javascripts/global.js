@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var Initialize = {
     init: function () {
-      pageFade.init();
+      // pageFade.init();
       toggleMenuClass.init();
       // setPageHeight.init();
       // instagram.init();

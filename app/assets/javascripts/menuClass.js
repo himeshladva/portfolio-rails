@@ -2,7 +2,7 @@ var toggleMenuClass = {
   init: function () {
     this.addClass();
     var self = this;
-    $(window).resize(function() {
+    $(window).resize(function () {
       self.removeClass();
       self.addClass();
     });
@@ -17,7 +17,6 @@ var toggleMenuClass = {
   },
 
   removeClass: function () {
-    $('nav.size').removeClass('main');
-    $('nav.size').removeClass('small');
+    $('nav.size').removeClass('main small');
   }
 };

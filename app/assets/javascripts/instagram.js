@@ -39,8 +39,8 @@ var instagram = {
 
     $('.next').click(function () {
       var feed = userFeed.options.custom;
-      var current = userFeed.options.custom.currentImage;
-      var total = userFeed.options.custom.images.length;
+      var current = feed.currentImage;
+      var total = feed.images.length;
 
       if (current < total - 1) {
         feed.currentImage++;
