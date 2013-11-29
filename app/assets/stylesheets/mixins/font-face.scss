@@ -9,6 +9,6 @@
     font-url("#{$path-prefix}.woff") format('woff'),
     font-url("#{$path-prefix}.ttf") format('truetype');
 
-  font-weight: $weight;
-  font-style: $style;
+  font-weight: normal;
+  font-style: normal;
 }
