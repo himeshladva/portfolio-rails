@@ -8,19 +8,37 @@
   .content {
     height: 1200px;
     width: 95%;
+    max-width: 1280px;
 
     margin: 0 auto;
-
 
     .section {
       margin: 0 5%;
 
-      min-height: 300px;
+      overflow: auto;
+
+      .left, .right {
+        box-sizing: border-box;
+
+        text-align: justify;
+      }
+
+      .left {
+        float: left;
+        padding-right: 20px;
+      }
+
+      .right {
+        float: right;
+        padding-left: 20px;
+      }
     }
 
     .section-separator {
       width: 90%;
       height: 33px;
+
+      padding-top: 30px;
 
       display: block;
       margin: auto;

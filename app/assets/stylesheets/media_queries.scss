@@ -27,6 +27,19 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    .left, .right {
+      border: none;
+      padding: 0 !important;
+      width: 100%;
+
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   header {
