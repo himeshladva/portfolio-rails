@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require instafeed.min.js
-//= require backbone-min.js
-//= require underscore-min.js
 //= require bootstrap
 //= require plugins/pageFade
 //= require plugins/menuClass
