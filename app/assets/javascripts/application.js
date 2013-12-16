@@ -13,9 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require instafeed.min.js
-//= require global
-//= require pageFade
-//= require menuClass
-//= require setPageHeight
-//= require instagram
-//= require scrollPos
+//= require backbone-min.js
+//= require underscore-min.js
+//= require bootstrap
+//= require plugins/pageFade
+//= require plugins/menuClass
+//= require plugins/setPageHeight
+//= require plugins/instagram
+//= require plugins/scrollPos
