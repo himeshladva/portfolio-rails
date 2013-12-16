@@ -7,13 +7,19 @@
 
   .content {
     height: 1200px;
+    width: 95%;
+
+    margin: 0 auto;
+
 
     .section {
-      height: 300px;
+      margin: 0 5%;
+
+      min-height: 300px;
     }
 
     .section-separator {
-      width: auto;
+      width: 90%;
       height: 33px;
 
       display: block;
@@ -21,7 +27,7 @@
 
       cursor: pointer;
 
-      @include backgroundImage(image-url('nav/separator_light.png'), no-repeat, center center, 950px 33px);
+      @include backgroundImage(image-url('nav/separator_light.png'), no-repeat, center center, 1250px 33px);
 
       transition: background-image 0.2s;
 

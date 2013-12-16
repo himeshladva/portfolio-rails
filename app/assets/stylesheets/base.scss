@@ -7,11 +7,15 @@ html, body {
 }
 
 h1, h2 {
+  font-family: "Roboto";
+  font-weight: normal;
   color: #404040;
 }
 
 h1 {
-  font-family: "Roboto";
   font-size: 30px;
-  font-weight: normal;
+}
+
+h2 {
+  font-size: 20px;
 }
