@@ -17,6 +17,10 @@
 
       overflow: auto;
 
+      h1.section-title {
+        text-align: center;
+      }
+
       .left, .right {
         box-sizing: border-box;
 
@@ -54,9 +58,5 @@
         transition: background-image 0.2s;
       }
     }
-  }
-
-  h1.section-title {
-    text-align: center;
   }
 }
