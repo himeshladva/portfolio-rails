@@ -1,11 +1,8 @@
 .home-section {
   text-align: center;
 
-  .top {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
+  .anchor-link {
+    top: -250px !important;
   }
 
   .carousel-wrapper {

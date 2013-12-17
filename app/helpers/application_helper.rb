@@ -18,4 +18,8 @@ module ApplicationHelper
   def current_page
     params[:action] == 'index' ? 'home' : params[:action]
   end
+
+  def is_last_separator?(bool)
+    return 'last' if bool
+  end
 end
