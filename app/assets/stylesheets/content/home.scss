@@ -1,6 +1,13 @@
 .home-section {
   text-align: center;
 
+  .top {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+  }
+
   .carousel-wrapper {
     img.carousel-image {
       width: 95%;
