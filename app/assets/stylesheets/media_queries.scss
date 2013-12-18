@@ -38,6 +38,13 @@
         text-align: left;
       }
     }
+
+    &.portfolio-section {
+      img.item-image {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
   }
 }
 
