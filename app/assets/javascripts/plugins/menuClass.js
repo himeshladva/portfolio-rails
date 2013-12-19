@@ -9,7 +9,7 @@ var toggleMenuClass = {
   },
 
   addClass: function () {
-    if ($(window).width() > 768) {
+    if ($(window).width() > 767) {
       $('nav.size').addClass('main');
     } else {
       $('nav.size').addClass('small');
