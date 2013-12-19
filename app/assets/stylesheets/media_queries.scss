@@ -21,13 +21,16 @@
   .content-container {
     margin-top: 70px;
   }
-
-  .nav-container {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 767px) {
+  .nav-container {
+    width: 100%;
+    background-color: #bbb;
+
+    display: none;
+  }
+
   .section {
     .left, .right {
       border: none;
@@ -51,12 +54,13 @@
 @media screen and (min-width: 481px) and (max-width: 767px) {
   header {
     background-color: orange;
+    .logo {
+      padding-left: 20px;
+    }
   }
 
   .nav-container {
-    nav.main {
-      display: none;
-    }
+    width: 50%;
   }
 }
 
@@ -64,30 +68,50 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     background-color: yellow;
+
+    .logo {
+      font-size: 60px;
+      padding-left: 20px;
+    }
+  }
+
+  div.menu-pull {
+    display: none !important;
   }
 
   .nav-container {
-    button.menu {
-      display: none;
-    }
+    display: block !important;
 
-    nav.main li a {
-      padding: 12px 9px 14px !important;
+    nav.main {
+      padding-right: 20px !important;
+
+      ul {
+        padding-left: 10px !important;
+
+        li {
+          padding: 0 !important;
+
+          a {
+            padding: 0px 0px 0px !important;
+          }
+        }
+      }
     }
 
     nav.small {
       display: none;
     }
   }
-
 }
 
 // DESKTOP
 @media screen and (min-width: 1025px) {
+  div.menu-pull {
+    display: none;
+  }
+
   .nav-container {
-    button.menu {
-      display: none;
-    }
+    display: block !important;
 
     nav.small {
       display: none;

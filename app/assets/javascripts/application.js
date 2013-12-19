@@ -21,3 +21,4 @@
 //= require plugins/instagram
 //= require plugins/scrollPos
 //= require plugins/smoothScroll
+//= require plugins/toggleMenu

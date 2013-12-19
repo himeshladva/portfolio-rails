@@ -7,6 +7,7 @@ $(document).ready(function () {
       // instagram.init();
       scrollPos.init();
       smoothScroll.init();
+      toggleMenu.init();
     }
   }
 
