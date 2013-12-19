@@ -2,18 +2,22 @@ var scrollPos = {
   init: function () {
     var self = this;
     $(window).scroll(function () {
-      var toggleShadow = self.resize([$('header.masthead')], 'shadow', 10);
-      var toggleHeaderSize = self.resize([$('header.masthead'), $('header .logo'), $('div.nav-container')], 'small', 300);
-
+      var toggleShadow = self.resize([$('header.masthead')], 'shadow', 10, 'desktop');
       toggleShadow();
+
+      var toggleShadow = self.resize([$('header.masthead')], 'shadow', 0, 'mobile');
+      toggleShadow();
+
+      var toggleHeaderSize = self.resize([$('header.masthead'), $('header .logo'), $('div.nav-container')], 'small', 300, 'desktop');
       toggleHeaderSize();
     });
   },
 
-  resize: function (el, newClass, desiredPos) {
+  resize: function (el, newClass, desiredPos, targetDevice) {
+    console.log(targetDevice)
     var self = this;
     return function () {
-      if (self.isMobile()()) {
+      if (self.currentDevice()() == targetDevice) {
         for (var i in el) {
           var currentPos = $(window).scrollTop();
           if (currentPos > desiredPos) {
@@ -26,9 +30,9 @@ var scrollPos = {
     };
   },
 
-  isMobile: function () {
+  currentDevice: function (deviceWidth) {
     return function () {
-      return ($(window).width() > 480);
+      return ($(window).width() > 480) ? 'desktop' : 'mobile';
     };
   }
 };
