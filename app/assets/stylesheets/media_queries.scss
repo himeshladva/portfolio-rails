@@ -49,6 +49,24 @@
       }
     }
   }
+
+  footer {
+    position: relative;
+
+    .facebook {
+      content: image-url('social/facebook_colour.png') !important;
+    }
+
+    .twitter {
+      content: image-url('social/twitter_colour.png') !important;
+    }
+    .linkedin {
+      content: image-url('social/linkedin_colour.png') !important;
+    }
+    .instagram {
+      content: image-url('social/instagram_colour.png') !important;
+    }
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -100,6 +118,22 @@
 
     nav.small {
       display: none;
+    }
+  }
+
+  footer {
+    .facebook {
+      content: image-url('social/facebook_colour.png') !important;
+    }
+
+    .twitter {
+      content: image-url('social/twitter_colour.png') !important;
+    }
+    .linkedin {
+      content: image-url('social/linkedin_colour.png') !important;
+    }
+    .instagram {
+      content: image-url('social/instagram_colour.png') !important;
     }
   }
 }
