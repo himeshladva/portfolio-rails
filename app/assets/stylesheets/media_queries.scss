@@ -1,20 +1,27 @@
 // PHONE
 @media screen and (max-width: 480px) {
   header {
-    height: 60px;
+    height: 40px;
 
     .logo {
-      font-size: 60px;
-      line-height: 60px;
+      padding-left: 15px;
+
+      font-size: 40px;
+      letter-spacing: -3px;
+      line-height: 40px;
 
       &:before {
-        content: 'h';
+        content: 'himesh';
       }
 
       &:after {
-        content: 'L';
+        content: 'Ladva';
         color: #1d8ef7;
       }
+    }
+
+    div.menu-pull {
+      margin-right: -1px;
     }
   }
 
