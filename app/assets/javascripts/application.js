@@ -20,3 +20,4 @@
 //= require plugins/setPageHeight
 //= require plugins/instagram
 //= require plugins/scrollPos
+//= require plugins/smoothScroll

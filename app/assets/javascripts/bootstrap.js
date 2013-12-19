@@ -6,6 +6,7 @@ $(document).ready(function () {
       // setPageHeight.init();
       // instagram.init();
       scrollPos.init();
+      smoothScroll.init();
     }
   }
 
