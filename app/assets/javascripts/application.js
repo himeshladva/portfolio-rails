@@ -15,10 +15,4 @@
 //= require instafeed.min.js
 //= require lightbox-2.6.min.js
 //= require bootstrap
-//= require plugins/pageFade
-//= require plugins/menuClass
-//= require plugins/setPageHeight
-//= require plugins/instagram
-//= require plugins/scrollPos
-//= require plugins/smoothScroll
-//= require plugins/toggleMenu
+//= require_tree ./plugins
