@@ -3,12 +3,14 @@
 div.menu-pull {
   float: right;
 
+  cursor: pointer;
+
   height: 100%;
   width: 60px;
 
   margin-right: 7px;
 
-  &.closed {
+  &.closed, &.active {
     @include backgroundImage(image-url('nav/icon.png'), no-repeat, center center, 30px 30px);
   }
 }
