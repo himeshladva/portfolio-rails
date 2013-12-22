@@ -4,18 +4,31 @@ html, body {
 
   font-family: "Roboto Light";
   // font-family: "Roboto";
-}
 
-h1, h2 {
-  font-family: "Roboto";
-  font-weight: normal;
-  color: #404040;
-}
+  div.opaque {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+  }
 
-h1 {
-  font-size: 30px;
-}
+  h1, h2 {
+    font-family: "Roboto";
+    font-weight: normal;
+    color: #404040;
+  }
 
-h2 {
-  font-size: 20px;
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }

@@ -14,7 +14,6 @@ var scrollPos = {
   },
 
   resize: function (el, newClass, desiredPos, targetDevice) {
-    console.log(targetDevice)
     var self = this;
     return function () {
       if (self.currentDevice()() == targetDevice) {

@@ -3,11 +3,12 @@ var toggleMenu = {
     var self = this;
 
     $("div.closed").click(function () {
-      $(".nav-container").fadeToggle(100, self.assertClasses($(this)));
+      $(".nav-container").fadeToggle(0, self.assertClasses($(this)));
     });
 
     $("nav.small a").click(function () {
       $(".nav-container").hide();
+      self.menuClosed($("div.active"));
     });
   },
 
@@ -26,11 +27,13 @@ var toggleMenu = {
   },
 
   menuActive: function ($el) {
+    $("body").append("<div class='opaque'></div>");
     $el.removeClass('closed');
     $el.addClass('active');
   },
 
   menuClosed: function ($el) {
+    $("div.opaque").remove();
     $el.removeClass('active');
     $el.addClass('closed');
   }
