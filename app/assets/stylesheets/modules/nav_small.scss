@@ -10,8 +10,23 @@ div.menu-pull {
 
   margin-right: 7px;
 
-  &.closed, &.active {
+  &.closed {
     @include backgroundImage(image-url('nav/icon.png'), no-repeat, center center, 30px 30px);
+  }
+
+  &.active {
+    background: none;
+
+    font-family: "Verdana";
+    font-size: 35px;
+    text-align: right;
+    line-height: 50px;
+
+    padding-right: 20px;
+
+    &:before {
+      content: 'X';
+    }
   }
 }
 
@@ -76,7 +91,6 @@ div.menu-pull {
         }
 
         transition: text-indent 0.2s;
-
       }
     }
   }

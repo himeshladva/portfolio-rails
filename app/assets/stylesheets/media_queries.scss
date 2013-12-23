@@ -1,5 +1,5 @@
 // SMALLER PHONE
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 375px) {
   header {
     .logo {
       font-size: 40px !important;
@@ -19,7 +19,7 @@
       line-height: 50px;
     }
 
-    div.menu-pull {
+    .menu-pull {
       margin-right: -7px;
 
       background-size: 25px 25px !important;
@@ -84,6 +84,19 @@
     .logo {
       padding-left: 20px;
     }
+
+    .menu-pull {
+      &.active {
+        background: none;
+
+        font-family: "Verdana";
+        font-size: 45px;
+        text-align: right;
+        line-height: 85px;
+
+        padding-right: 15px;
+      }
+    }
   }
 
   .nav-container {
@@ -102,7 +115,7 @@
     }
   }
 
-  div.menu-pull {
+  .menu-pull {
     display: none !important;
   }
 
@@ -149,7 +162,7 @@
 
 // DESKTOP
 @media screen and (min-width: 1025px) {
-  div.menu-pull {
+  .menu-pull {
     display: none;
   }
 
