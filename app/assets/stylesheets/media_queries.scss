@@ -17,15 +17,6 @@
       font-size: 50px;
       letter-spacing: -3px;
       line-height: 50px;
-
-      &:before {
-        content: 'himesh';
-      }
-
-      &:after {
-        content: 'Ladva';
-        color: #1d8ef7;
-      }
     }
 
     div.menu-pull {
@@ -43,7 +34,8 @@
 @media screen and (max-width: 767px) {
   .nav-container {
     width: 100%;
-    background-color: #bbb;
+
+    background-color: #fff;
 
     display: none;
   }
