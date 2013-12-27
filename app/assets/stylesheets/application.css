@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require lightbox.css
+ *= require responsiveslides.css
  *= require base
  *= require fonts
  *= require_tree ./content

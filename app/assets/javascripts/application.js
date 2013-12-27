@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require responsiveslides.min.js
 //= require instafeed.min.js
 //= require lightbox-2.6.min.js
 //= require bootstrap

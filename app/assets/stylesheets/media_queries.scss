@@ -28,6 +28,12 @@
 
   .content-container {
     margin-top: 50px;
+
+    .rslides_container {
+      p.caption {
+        display: none;
+      }
+    }
   }
 }
 
@@ -41,6 +47,14 @@
   }
 
   .section {
+    .rslides_container {
+      p.caption {
+        font-size: 16px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
     .left, .right {
       border: none;
       padding: 0 !important;
