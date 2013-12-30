@@ -36,32 +36,33 @@
 
 
 
+
 .rslides {
   margin: 0 auto;
-  }
+}
 
 .rslides_container {
   position: relative;
   float: left;
   width: 100%;
-  }
 
-.caption {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  font-size: 18px;
-  text-shadow: none;
-  color: #fff;
-  background: #000;
-  background: rgba(0,0,0, .6);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 5px 20px;
-  margin: 0;
-  max-width: none;
+  .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    text-shadow: none;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0, .6);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px 20px;
+    margin: 0;
+    max-width: none;
   }
+}
 
 .centered-btns_nav {
   z-index: 3;
