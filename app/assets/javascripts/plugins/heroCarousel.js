@@ -14,7 +14,7 @@ var heroCarousel = {
     pauseControls: true,
     prevText: "Previous",
     nextText: "Next",
-    maxwidth: "",
+    maxwidth: 1600,
     navContainer: "",
     manualControls: "",
     namespace: "transparent-btns",
