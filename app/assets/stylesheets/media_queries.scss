@@ -38,6 +38,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    border-top: none;
+  }
+
   .nav-container {
     width: 100%;
 
@@ -125,6 +129,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     background-color: yellow;
+    border-top: none;
 
     .logo {
       font-size: 60px;
