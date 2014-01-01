@@ -103,6 +103,10 @@
       content: image-url('social/instagram_colour.png') !important;
     }
   }
+
+  div.background-image {
+    background: none !important;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -179,6 +183,10 @@
     .instagram {
       content: image-url('social/instagram_colour.png') !important;
     }
+  }
+
+  div.background-image {
+    background: none !important;
   }
 }
 

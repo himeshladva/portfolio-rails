@@ -13,4 +13,11 @@ $(document).ready(function () {
   }
 
   Initialize.init();
+
+  // Array.prototype.randomElement = function () {
+  //     return this[Math.floor(Math.random() * this.length)];
+  // }
+
+  // var myArray = [1,2,3,4,5];
+  // console.log(myArray.randomElement());
 });
