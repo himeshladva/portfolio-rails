@@ -44,7 +44,7 @@ var scrollPos = {
     };
   },
 
-  currentDevice: function (deviceWidth) {
+  currentDevice: function () {
     return function () {
       return ($(window).width() > 480) ? 'desktop' : 'mobile';
     };
