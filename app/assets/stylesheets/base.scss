@@ -8,7 +8,7 @@ html, body {
   // font-family: "Roboto";
 
   div.background-image {
-    @include backgroundImage(image-url('egypt1.png'), no-repeat, center top, 100% auto);
+    @include backgroundImage(image-url('background/egypt1.png'), no-repeat, center top, 100% auto);
     position: fixed;
     top: 0;
     height: 100%;
