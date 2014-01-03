@@ -2,27 +2,42 @@ var scrollPos = {
   init: function () {
     var self = this;
     $(window).scroll(function () {
-      var toggleShadow = self.resize([$('header.masthead')], 'shadow', 10, 'desktop');
+      var toggleShadow = self.resize({
+        elems: [$('header.masthead')],
+        newClass: 'shadow',
+        desiredPos: 10,
+        targetDevice: 'desktop'
+      });
       toggleShadow();
 
-      var toggleShadow = self.resize([$('header.masthead')], 'shadow', 0, 'mobile');
+      var toggleShadow = self.resize({
+        elems: [$('header.masthead')],
+        newClass: 'shadow',
+        desiredPos: 0,
+        targetDevice: 'mobile'
+      });
       toggleShadow();
 
-      var toggleHeaderSize = self.resize([$('header.masthead'), $('header .logo'), $('div.nav-container')], 'small', 300, 'desktop');
-      toggleHeaderSize();
+      var toggleHeaderSize = self.resize({
+        elems: [$('header.masthead'), $('header .logo'), $('div.nav-container')],
+        newClass: 'small',
+        desiredPos: 300,
+        targetDevice: 'desktop'
+      });
+      // toggleHeaderSize();
     });
   },
 
-  resize: function (el, newClass, desiredPos, targetDevice) {
+  resize: function (args) {
     var self = this;
     return function () {
-      if (self.currentDevice()() == targetDevice) {
-        for (var i in el) {
+      if (self.currentDevice()() == args.targetDevice) {
+        for (var i in args.elems) {
           var currentPos = $(window).scrollTop();
-          if (currentPos > desiredPos) {
-            el[i].addClass(newClass);
+          if (currentPos > args.desiredPos) {
+            args.elems[i].addClass(args.newClass);
           } else {
-            el[i].removeClass(newClass);
+            args.elems[i].removeClass(args.newClass);
           }
         }
       }
