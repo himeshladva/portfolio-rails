@@ -6,8 +6,8 @@ var instagram = {
   getImages: function () {
     var userFeed = new Instafeed({
       get: 'user',
-      userId: 30599352,
-      accessToken: '30599352.467ede5.86ebf50346cc47f2a20e34da10048707',
+      userId: '@@tokenise-this@@',
+      accessToken: '@@tokenise-this@@',
       limit: 100,
       resolution: 'low_resolution',
       template: '<div class="image"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></div><div class="caption">{{caption}}</div>',
